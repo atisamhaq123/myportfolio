@@ -1,0 +1,543 @@
+[
+  {
+    "id": "aurelle",
+    "folder": "Furniture Selling Website",
+    "screenshots": [
+      {
+        "file": "01-home-desktop.png",
+        "label": "Furniture storefront · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8131/",
+        "width": 1440,
+        "height": 4233,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-catalog-desktop.png",
+        "label": "Product catalog · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8131/shop.php",
+        "width": 1440,
+        "height": 1771,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-product-desktop.png",
+        "label": "Product details · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8131/product.php?id=1",
+        "width": 1440,
+        "height": 1928,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-home-mobile.png",
+        "label": "Furniture storefront · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8131/",
+        "width": 390,
+        "height": 6001,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-catalog-mobile.png",
+        "label": "Product catalog · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8131/shop.php",
+        "width": 390,
+        "height": 2485,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "helio",
+    "folder": "Helio Customer Portal",
+    "screenshots": [
+      {
+        "file": "01-dashboard-desktop.png",
+        "label": "Solar customer dashboard · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8132/index.php?page=dashboard",
+        "width": 1440,
+        "height": 1114,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-energy-desktop.png",
+        "label": "Energy reporting · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8132/index.php?page=energy",
+        "width": 1440,
+        "height": 1059,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-project-desktop.png",
+        "label": "Installation timeline · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8132/index.php?page=project",
+        "width": 1440,
+        "height": 1000,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-dashboard-mobile.png",
+        "label": "Customer dashboard · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8132/index.php?page=dashboard",
+        "width": 390,
+        "height": 2193,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-project-mobile.png",
+        "label": "Installation timeline · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8132/index.php?page=project",
+        "width": 390,
+        "height": 1141,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "medica",
+    "folder": "Medical Software",
+    "screenshots": [
+      {
+        "file": "01-dashboard-desktop.png",
+        "label": "Clinic overview · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8135/",
+        "width": 1440,
+        "height": 1368,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-patients-desktop.png",
+        "label": "Patient directory · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8135/patients",
+        "width": 1440,
+        "height": 1268,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-appointments-desktop.png",
+        "label": "Appointment scheduling · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8135/appointments",
+        "width": 1440,
+        "height": 1000,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-dashboard-mobile.png",
+        "label": "Clinic overview · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8135/",
+        "width": 390,
+        "height": 2158,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-patients-mobile.png",
+        "label": "Patient directory · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8135/patients",
+        "width": 390,
+        "height": 1318,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "talentflow",
+    "folder": "talentflow Recruitment CRM system",
+    "screenshots": [
+      {
+        "file": "01-dashboard-desktop.png",
+        "label": "Recruitment overview · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8137/",
+        "width": 1440,
+        "height": 2155,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-pipeline-desktop.png",
+        "label": "Candidate pipeline · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8137/workspace/applications",
+        "width": 1440,
+        "height": 1368,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-candidates-desktop.png",
+        "label": "Candidate directory · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8137/workspace/candidates",
+        "width": 1440,
+        "height": 1445,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-dashboard-mobile.png",
+        "label": "Recruitment overview · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8137/",
+        "width": 390,
+        "height": 3043,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-jobs-mobile.png",
+        "label": "Job management · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8137/workspace/jobs",
+        "width": 390,
+        "height": 1534,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "lingua",
+    "folder": "lingua LMS for english learning",
+    "screenshots": [
+      {
+        "file": "01-home-desktop.png",
+        "label": "Learning marketplace · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8133/",
+        "width": 1440,
+        "height": 2413,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-tutors-desktop.png",
+        "label": "Tutor discovery · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8133/?page=tutors",
+        "width": 1440,
+        "height": 1653,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-dashboard-desktop.png",
+        "label": "Student workspace · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8133/?page=dashboard",
+        "width": 1440,
+        "height": 1184,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-dashboard-mobile.png",
+        "label": "Student workspace · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8133/?page=dashboard",
+        "width": 390,
+        "height": 1906,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-tutors-mobile.png",
+        "label": "Tutor discovery · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8133/?page=tutors",
+        "width": 390,
+        "height": 3478,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "wholesale",
+    "folder": "wholesaler ecommerce platform",
+    "screenshots": [
+      {
+        "file": "01-marketplace-desktop.png",
+        "label": "Wholesale marketplace · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8138/",
+        "width": 1440,
+        "height": 2257,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "02-product-desktop.png",
+        "label": "Supplier comparison · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8138/product?id=1",
+        "width": 1440,
+        "height": 1361,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "03-bag-desktop.png",
+        "label": "Wholesale order bag · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8138/cart",
+        "width": 1440,
+        "height": 1000,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "04-marketplace-mobile.png",
+        "label": "Wholesale marketplace · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8138/",
+        "width": 390,
+        "height": 3347,
+        "overflow": false,
+        "brokenImages": 0
+      },
+      {
+        "file": "05-product-mobile.png",
+        "label": "Supplier comparison · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8138/product?id=1",
+        "width": 390,
+        "height": 1875,
+        "overflow": false,
+        "brokenImages": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "marketplace",
+    "folder": "MarketPlace Application",
+    "screenshots": [
+      {
+        "file": "01-marketplace-desktop.png",
+        "label": "Classifieds discovery · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8134/",
+        "width": 1440,
+        "height": 2638,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "02-listing-desktop.png",
+        "label": "Listing detail · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8134/login",
+        "width": 1440,
+        "height": 1000,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "03-dashboard-desktop.png",
+        "label": "Seller inventory · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8134/dashboard",
+        "width": 1440,
+        "height": 1490,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "04-marketplace-mobile.png",
+        "label": "Classifieds discovery · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8134/",
+        "width": 390,
+        "height": 3503,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "05-listing-mobile.png",
+        "label": "Listing detail · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8134/listings/create",
+        "width": 390,
+        "height": 1804,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "veyra",
+    "folder": "Real-estate platform",
+    "screenshots": [
+      {
+        "file": "01-home-desktop.png",
+        "label": "Real estate homepage · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8136/",
+        "width": 1440,
+        "height": 4563,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "02-properties-desktop.png",
+        "label": "Property discovery · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8136/buy",
+        "width": 1440,
+        "height": 2406,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "03-property-desktop.png",
+        "label": "Property details · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8136/property?id=4",
+        "width": 1440,
+        "height": 2644,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "04-home-mobile.png",
+        "label": "Real estate homepage · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8136/",
+        "width": 390,
+        "height": 7260,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "05-property-mobile.png",
+        "label": "Property details · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8136/property?id=4",
+        "width": 390,
+        "height": 3835,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "zenda",
+    "folder": "Zenda Store",
+    "screenshots": [
+      {
+        "file": "01-home-desktop.png",
+        "label": "Artisan storefront · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8139/",
+        "width": 1440,
+        "height": 3812,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "02-shop-desktop.png",
+        "label": "WooCommerce catalog · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8139/shop/",
+        "width": 1440,
+        "height": 2353,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "03-product-desktop.png",
+        "label": "WooCommerce product detail · desktop",
+        "mobile": false,
+        "url": "http://127.0.0.1:8139/product/the-amber-candle/",
+        "width": 1440,
+        "height": 2650,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "04-home-mobile.png",
+        "label": "Artisan storefront · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8139/",
+        "width": 390,
+        "height": 4177,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      },
+      {
+        "file": "05-shop-mobile.png",
+        "label": "WooCommerce catalog · mobile",
+        "mobile": true,
+        "url": "http://127.0.0.1:8139/shop/",
+        "width": 390,
+        "height": 2282,
+        "overflow": false,
+        "brokenImages": 0,
+        "brokenImagePaths": []
+      }
+    ],
+    "errors": [
+      "Function rdt not implemented.",
+      "Function snaptr not implemented.",
+      "Function rdt not implemented.",
+      "Function snaptr not implemented.",
+      "Function rdt not implemented.",
+      "Function snaptr not implemented.",
+      "Function rdt not implemented.",
+      "Function snaptr not implemented.",
+      "Function rdt not implemented.",
+      "Function snaptr not implemented.",
+      "Function rdt not implemented.",
+      "Function snaptr not implemented."
+    ]
+  }
+]

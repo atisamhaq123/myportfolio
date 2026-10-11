@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "9 projects, exactly 5 screenshots each, all 45 original files exist",
+    "All three category filters show the correct projects",
+    "All 9 case studies, all 45 gallery images, full-resolution viewer, navigation, and Escape close work",
+    "Project brief generation and copy feedback work",
+    "No page overflow or broken images at 1440, 1024, 768, 390, and 320 pixels",
+    "Mobile case study layout and shareable project hashes work"
+  ],
+  "errors": []
+}

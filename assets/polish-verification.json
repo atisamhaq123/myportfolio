@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Entrance animation finishes once; all 9 project engineering details render",
+    "No horizontal overflow at 1440, 1024, 768, 390, and 320 pixels",
+    "All three engineering evidence links open case studies",
+    "Reduced-motion preference disables animation and keeps content visible"
+  ],
+  "errors": []
+}
