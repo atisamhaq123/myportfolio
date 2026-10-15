@@ -1,5 +1,17 @@
 window.portfolioProjects = [
   {
+    id: 'grounded-men', title: 'Grounded Men', subtitle: 'Yoga booking & class management', category: 'Business platforms', type: 'BOOKING PLATFORM', client: 'Grounded Men (demo project)', date: 'October 2026', color: '#e8eee2', cover: '01-home-desktop.png', mobileCover: '05-dashboard-mobile.png',
+    summary: 'A responsive yoga platform connecting local class discovery and trial reservations with venue, teacher, and attendance management.',
+    description: 'Grounded Men makes beginner yoga classes easier to discover and manage. Customers can search venues by town or region, reserve five-week trial courses, review their booking history, and request membership plans. Administrators manage venues, teachers, customers, course schedules, and occupancy, while teachers record attendance for their assigned classes.',
+    challenge: 'A multi-venue yoga service needs a welcoming customer experience alongside reliable capacity checks, booking history, and clear access boundaries for administrators, teachers, and customers.',
+    solution: 'Built a lightweight PHP and SQLite prototype with a responsive interface, searchable venue records, bulk course creation, duplicate and capacity protection, and role-based server authorization. Teacher registers persist attendance for each session, while reports and CSV exports help administrators review activity.',
+    features: ['Searchable venue finder with town search and region filters', 'Trial reservations, cancellations, and unified booking and plan history', 'Bulk creation of five-week courses with teacher, time, price, and capacity', 'Teacher registers with attendance saved for each of five sessions', 'Venue and customer management, occupancy reporting, and CSV export', 'Membership plan requests, local email outbox, and accessible mobile navigation'],
+    stack: ['PHP', 'SQLite', 'PDO', 'JavaScript', 'CSS'],
+    scope: 'A working local prototype with 23 illustrative venues and demo accounts. Plan requests do not grant credits or start subscriptions. Payments, live email delivery, and recurring membership bookings require production integration; no money is collected.',
+    mockup: 'Mockups/grounded-men-portfolio-mockup-1000x750.png',
+    screens: [['01-home-desktop.png', 'Yoga homepage and venue finder', 'desktop'], ['02-dashboard-desktop.png', 'Class management overview', 'desktop'], ['03-schedule-desktop.png', 'Weekly class schedule', 'desktop'], ['04-home-mobile.png', 'Mobile yoga homepage', 'mobile'], ['05-dashboard-mobile.png', 'Mobile class management overview', 'mobile']]
+  },
+  {
     id: 'talentflow', title: 'TalentFlow', subtitle: 'Recruitment CRM & applicant tracking', category: 'Business platforms', type: 'CRM / ATS', client: 'Northstar Talent Partners', date: 'September 2026', color: '#e9e7fb', cover: '01-dashboard-desktop.png', mobileCover: '04-dashboard-mobile.png',
     summary: 'A complete recruitment workspace that connects client companies, candidates, jobs, interviews, and placements in one responsive application.',
     description: 'TalentFlow brings the daily work of a recruitment agency into a single, consistent interface. Recruiters can manage company relationships and candidate profiles, track applications through a hiring pipeline, schedule interviews, and follow successful hires into placement and invoice records. The application pairs a clear dashboard with searchable directories, detailed record pages, and a mobile workspace.',

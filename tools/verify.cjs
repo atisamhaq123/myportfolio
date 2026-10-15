@@ -3,7 +3,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const {pathToFileURL} = require('node:url');
 const portfolio = path.resolve(__dirname, '..');
-const {chromium} = require(path.join(portfolio, '../Helio Customer Portal/.tools/node_modules/playwright'));
+const {chromium} = require(path.join(portfolio, '../../Helio Customer Portal/.tools/node_modules/playwright'));
 (async () => {
  const browser = await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  const results = {checks:[],errors:[]};
@@ -17,17 +17,17 @@ const {chromium} = require(path.join(portfolio, '../Helio Customer Portal/.tools
   await page.evaluate(() => Promise.all(document.getAnimations().map(animation => animation.finished.catch(() => {}))));
   fs.mkdirSync(path.join(portfolio,'assets/previews'),{recursive:true});
   await page.screenshot({path:path.join(portfolio,'assets/previews/hero-desktop.png'),animations:'disabled'});
-  assert.equal(await page.locator('.project-card').count(),9);
+  assert.equal(await page.locator('.project-card').count(),10);
   const projects = await page.evaluate(() => window.portfolioProjects);
   for (const project of projects) {
    assert.equal(project.screens.length,5);
    for (const [file] of project.screens) assert.ok(fs.existsSync(path.join(portfolio,'assets/screenshots',project.id,file)),`Missing ${project.id}/${file}`);
   }
-  results.checks.push('9 projects, exactly 5 screenshots each, all 45 original files exist');
+  results.checks.push('10 projects, exactly 5 screenshots each, all 50 original files exist');
   await page.getByRole('button',{name:'Ecommerce',exact:true}).click();
   assert.equal(await page.locator('.project-card:visible').count(),3);
   await page.getByRole('button',{name:'Business platforms',exact:true}).click();
-  assert.equal(await page.locator('.project-card:visible').count(),3);
+  assert.equal(await page.locator('.project-card:visible').count(),4);
   await page.getByRole('button',{name:'Marketplaces',exact:true}).click();
   assert.equal(await page.locator('.project-card:visible').count(),3);
   await page.locator('[data-filter="All"]').click();
@@ -53,7 +53,7 @@ const {chromium} = require(path.join(portfolio, '../Helio Customer Portal/.tools
    assert.equal(await page.locator('#case-dialog').evaluate(d=>d.open),true);
    await page.keyboard.press('Escape');
   }
-  results.checks.push('All 9 case studies, all 45 gallery images, full-resolution viewer, navigation, and Escape close work');
+  results.checks.push('All 10 case studies, all 50 gallery images, full-resolution viewer, navigation, and Escape close work');
   await page.locator('#brief-open').click();
   await page.locator('[name="project"]').fill('A custom Laravel customer portal');
   await page.locator('[name="details"]').fill('Customer sign-in, project status, documents, and a responsive dashboard.');

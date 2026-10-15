@@ -23,6 +23,7 @@
     </article>`).join('');
 
   const engineeringHighlights = {
+    'grounded-men': 'Capacity-protected bookings & teacher-scoped attendance',
     talentflow: 'Team-scoped access & hiring-stage history',
     veyra: 'Listing review & multi-role property workflows',
     medica: 'Authenticator MFA & encrypted clinical notes',
@@ -78,6 +79,14 @@
       <p class="scope-note"><strong>Project scope:</strong> ${escape(project.scope)}</p><div class="case-bottom"><p>Have a similar project in mind?</p><button class="button button-dark" data-discuss="${project.id}">Let’s discuss your idea <span aria-hidden="true">↗</span></button></div>`;
     const note = document.querySelector('#case-content .-note');
     note.className = 'sample-note';
+    if (project.mockup) {
+      const download = document.createElement('a');
+      download.className = 'text-button';
+      download.href = project.mockup;
+      download.download = '';
+      download.textContent = 'Download portfolio mockup (1000 × 750 PNG)';
+      note.append(download);
+    }
     const engineering = document.createElement('p');
     engineering.className = 'case-engineering';
     engineering.innerHTML = `<small>ENGINEERING FOCUS</small>${escape(engineeringHighlights[project.id])}`;
@@ -93,7 +102,9 @@
     image.src = imagePath(currentProject, file);
     image.alt = `${currentProject.title} — ${caption}`;
     document.querySelector('#image-title').textContent = `${currentProject.title} / ${caption}`;
-    document.querySelector('#image-counter').textContent = `${currentImage + 1} of 5 · ${device === 'mobile' ? '780px wide' : '2880px wide'} · Original PNG`;
+    const counter = document.querySelector('#image-counter');
+    counter.textContent = `${currentImage + 1} of ${currentProject.screens.length} · Original PNG`;
+    image.onload = () => { counter.textContent = `${currentImage + 1} of ${currentProject.screens.length} · ${image.naturalWidth}px wide · Original PNG`; };
     document.querySelector('#image-download').href = image.src;
     document.querySelector('#image-download').download = `${currentProject.id}-${file}`;
     document.querySelector('.image-stage').classList.toggle('mobile', device === 'mobile');

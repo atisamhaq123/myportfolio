@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const {pathToFileURL} = require('node:url');
-const {chromium} = require('../../Helio Customer Portal/.tools/node_modules/playwright');
+const {chromium} = require('../../../Helio Customer Portal/.tools/node_modules/playwright');
 (async () => {
  const browser = await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,timeout:20000});
  const report = {checks:[],errors:[]};
@@ -15,8 +15,8 @@ const {chromium} = require('../../Helio Customer Portal/.tools/node_modules/play
   await page.waitForTimeout(1500);
   assert.equal(await page.locator('.hero-line').first().evaluate(el=>getComputedStyle(el).opacity),'1');
   assert.equal(await page.locator('.hero-line').first().evaluate(el=>getComputedStyle(el).animationIterationCount),'1');
-  assert.equal(await page.locator('.engineering-highlight').count(),9);
-  report.checks.push('Entrance animation finishes once; all 9 project engineering details render');
+  assert.equal(await page.locator('.engineering-highlight').count(),10);
+  report.checks.push('Entrance animation finishes once; all 10 project engineering details render');
   console.log('PASS entrance and engineering details');
   for (const width of [1440,1024,768,390,320]) { console.log("CHECK viewport "+width); console.log("CHECK viewport "+width);
    await page.setViewportSize({width,height:width>600?1000:844});

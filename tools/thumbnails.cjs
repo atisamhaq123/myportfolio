@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const portfolio = path.resolve(__dirname, '..');
-const {chromium} = require(path.join(portfolio,'../Helio Customer Portal/.tools/node_modules/playwright'));
+const {chromium} = require(path.join(portfolio,'../../Helio Customer Portal/.tools/node_modules/playwright'));
 (async () => {
  const browser = await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  let count = 0, total = 0;
