@@ -1,5 +1,66 @@
 window.portfolioProjects = [
   {
+  "id": "clientnest",
+  "title": "ClientNest",
+  "subtitle": "Agency client portal & subscription SaaS",
+  "category": "Business platforms",
+  "type": "SAAS / CLIENT PORTAL",
+  "client": "ClientNest (demo project)",
+  "date": "October 2026",
+  "color": "#e6eee8",
+  "cover": "01-dashboard-desktop.png",
+  "mobileCover": "05-dashboard-mobile.png",
+  "summary": "An agency workspace for tracking client projects, sharing deliverables, collecting approvals, and managing SaaS subscriptions.",
+  "description": "ClientNest gives small agencies and their clients a shared workspace for project updates, private files, conversations, milestones, and review decisions. Agency owners manage delivery and subscriptions, while clients see assigned projects and approve deliverables or request changes with feedback.",
+  "challenge": "Agencies need to keep project progress, shared files, and approval feedback together while protecting each workspace and limiting clients to their assigned work. Subscription limits must also stay consistent with billing status.",
+  "solution": "Built with Next.js App Router, React, and TypeScript, backed by Supabase authentication, PostgreSQL row-level security, private storage, and realtime project messages. Stripe Checkout, verified webhooks, and the billing portal support recurring agency subscriptions and project limits.",
+  "features": [
+    "Agency and client accounts with workspace and project access controls",
+    "Project tracking, milestones, and realtime project conversations",
+    "Private deliverables with approvals and change-request feedback",
+    "In-app notifications with unread counts and project navigation",
+    "Stripe subscriptions, plan limits, and customer billing portal",
+    "Responsive landing page and interactive browser-local demo"
+  ],
+  "stack": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Supabase",
+    "Stripe",
+    "PostgreSQL",
+    "CSS"
+  ],
+  "scope": "Screenshots show the interactive demo with sample data stored in browser localStorage. Demo uploads retain metadata only and downloads use placeholder content. Hosted authentication, private file transfer, and Stripe billing require configured services; these captures do not verify live payments. No AI features are included in the current release.",
+  "screens": [
+    [
+      "01-dashboard-desktop.png",
+      "Agency project dashboard",
+      "desktop"
+    ],
+    [
+      "02-landing-desktop.png",
+      "ClientNest SaaS landing page",
+      "desktop"
+    ],
+    [
+      "03-landing-mobile.png",
+      "Mobile SaaS landing page",
+      "mobile"
+    ],
+    [
+      "04-conversation-mobile.png",
+      "Mobile project conversation and milestones",
+      "mobile"
+    ],
+    [
+      "05-dashboard-mobile.png",
+      "Mobile agency dashboard",
+      "mobile"
+    ]
+  ]
+},
+  {
     id: 'grounded-men', title: 'Grounded Men', subtitle: 'Yoga booking & class management', category: 'Business platforms', type: 'BOOKING PLATFORM', client: 'Grounded Men (demo project)', date: 'October 2026', color: '#e8eee2', cover: '01-home-desktop.png', mobileCover: '05-dashboard-mobile.png',
     summary: 'A responsive yoga platform connecting local class discovery and trial reservations with venue, teacher, and attendance management.',
     description: 'Grounded Men makes beginner yoga classes easier to discover and manage. Customers can search venues by town or region, reserve five-week trial courses, review their booking history, and request membership plans. Administrators manage venues, teachers, customers, course schedules, and occupancy, while teachers record attendance for their assigned classes.',
