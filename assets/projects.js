@@ -1,6 +1,70 @@
 window.portfolioProjects = [
+{
+  "id": "orbit-sales",
+  "title": "Orbit Sales",
+  "subtitle": "AI sales CRM with document-based RAG",
+  "category": "Business platforms",
+  "type": "AI SAAS / RAG",
+  "client": "Orbit Sales (demo project)",
+  "date": "October 2026",
+  "color": "#dcefee",
+  "cover": "01-dashboard-desktop.png",
+  "mobileCover": "04-dashboard-mobile.png",
+  "summary": "A sales workspace that combines leads, follow-ups and team knowledge with AI answers and editable drafts grounded in uploaded documents.",
+  "description": "Orbit Sales brings CRM records, a six-stage pipeline, follow-ups and private team knowledge into one responsive application. Its retrieval-augmented generation (RAG) workflow indexes uploaded TXT, Markdown and text-based PDF documents, retrieves relevant passages and generates answers with source citations. Teams can review and edit AI follow-up drafts before copying them into their own communication tools.",
+  "challenge": "Small teams need to keep customer context and product knowledge together so AI-assisted sales work can reference relevant sources, respect workspace access and remain under human review.",
+  "solution": "Built a Next.js and TypeScript application with Supabase email authentication, PostgreSQL workspace policies and private file storage. A separate ingestion worker extracts and chunks documents, generates OpenAI embeddings and indexes them with pgvector. Hybrid vector and full-text retrieval supplies evidence for cited answers and drafts. Added team invitations, Stripe subscription integration and a shared layout that preserves workspace data across navigation.",
+  "features": [
+    "Shared leads, six-stage sales pipeline and assigned follow-ups",
+    "Document-based RAG with hybrid search, source citations and insufficient-evidence handling",
+    "Private knowledge uploads with queued background extraction and indexing",
+    "Editable AI follow-up drafts, lead summaries and suggested next actions",
+    "Email/password accounts, workspace membership and email-bound team invitations",
+    "Stripe subscription integration, plan limits and owner billing controls",
+    "Persistent section navigation and responsive desktop/mobile layouts"
+  ],
+  "stack": [
+    "Next.js",
+    "TypeScript",
+    "OpenAI / RAG",
+    "Supabase",
+    "pgvector",
+    "React",
+    "PostgreSQL",
+    "Stripe"
+  ],
+  "scope": "Independent portfolio demo. Screenshots use fictional browser-local records; AI answers, indexing and billing in these views are explicitly simulated. A separate live sample upload was successfully indexed into six chunks. Email delivery, complete live payment flows and all generated-answer scenarios are not certified by these captures. The application generates drafts for review and does not send sales messages automatically.",
+  "screens": [
+    [
+      "01-dashboard-desktop.png",
+      "Sales dashboard and follow-up overview",
+      "desktop"
+    ],
+    [
+      "02-assistant-desktop.png",
+      "AI knowledge answer with source citation (demo)",
+      "desktop"
+    ],
+    [
+      "03-knowledge-desktop.png",
+      "Private knowledge library and indexing states (demo)",
+      "desktop"
+    ],
+    [
+      "04-dashboard-mobile.png",
+      "Mobile sales dashboard",
+      "mobile"
+    ],
+    [
+      "05-assistant-mobile.png",
+      "Mobile AI assistant and cited answer (demo)",
+      "mobile"
+    ]
+  ]
+},
   {
   "id": "clientnest",
+  "mockup": "Mockups/clientnest-portfolio-mockup-1000x750.png",
   "title": "ClientNest",
   "subtitle": "Agency client portal & subscription SaaS",
   "category": "Business platforms",

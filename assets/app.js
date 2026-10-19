@@ -23,6 +23,7 @@
     </article>`).join('');
 
   const engineeringHighlights = {
+    'orbit-sales': 'Document-based RAG, hybrid retrieval & cited AI answers',
     clientnest: 'Tenant-scoped access, private files & verified subscription limits',
     'grounded-men': 'Capacity-protected bookings & teacher-scoped attendance',
     talentflow: 'Team-scoped access & hiring-stage history',
