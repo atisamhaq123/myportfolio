@@ -23,6 +23,7 @@
     </article>`).join('');
 
   const engineeringHighlights = {
+    'maid-match': 'Tenant-isolated family workspaces & validated AI-scored shortlists',
     'quotient-procurement': 'Tenant-safe quote comparison, approvals & bounded AI review',
     'orbit-sales': 'Document-based RAG, hybrid retrieval & cited AI answers',
     clientnest: 'Tenant-scoped access, private files & verified subscription limits',
@@ -78,7 +79,7 @@
     document.querySelector('#case-content').innerHTML = `
       <header class="case-header"><p class="eyebrow">${escape(project.type)} / ${escape(project.category.toUpperCase())}</p><h2 id="case-title">${escape(project.title)}</h2><p class="case-subtitle">${escape(project.subtitle)}</p><div class="case-metadata"><div><small> CLIENT</small>${escape(project.client)}</div><div><small> PROJECT DATE</small>${escape(project.date)}</div><div><small>MY ROLE</small>Design & full stack development</div><div><small>PLATFORMS</small>Desktop & mobile web</div></div><p class="-note"></p></header>
       <div class="case-detail"><p class="case-intro">${escape(project.description)}</p><div class="case-columns"><section><h3>The challenge</h3><p>${escape(project.challenge)}</p></section><section><h3>The implementation</h3><p>${escape(project.solution)}</p></section></div><h3>What’s included</h3><ul class="feature-list">${project.features.map(feature => `<li>${escape(feature)}</li>`).join('')}</ul><div class="case-stack"><span>TECHNOLOGY STACK</span>${tags(project.stack)}</div></div>
-      <section class="gallery-section"><div class="gallery-heading"><h3>The application, up close.</h3><span>5 original captures · Click to explore</span></div><div class="screenshot-grid">${project.screens.map(([file, caption, device], index) => `<button class="screenshot-button ${device}" data-image="${index}" aria-label="Open full resolution: ${escape(caption)}"><img src="${thumbnailPath(project, file)}" alt="${escape(caption)} screenshot from ${escape(project.title)}" loading="lazy"><span>${escape(caption)}<i aria-hidden="true">↗</i></span></button>`).join('')}</div></section>
+      <section class="gallery-section"><div class="gallery-heading"><h3>The application, up close.</h3><span>${project.screens.length} original captures · Click to explore</span></div><div class="screenshot-grid">${project.screens.map(([file, caption, device], index) => `<button class="screenshot-button ${device}" data-image="${index}" aria-label="Open full resolution: ${escape(caption)}"><img src="${thumbnailPath(project, file)}" alt="${escape(caption)} screenshot from ${escape(project.title)}" loading="lazy"><span>${escape(caption)}<i aria-hidden="true">↗</i></span></button>`).join('')}</div></section>
       <p class="scope-note"><strong>Project scope:</strong> ${escape(project.scope)}</p><div class="case-bottom"><p>Have a similar project in mind?</p><button class="button button-dark" data-discuss="${project.id}">Let’s discuss your idea <span aria-hidden="true">↗</span></button></div>`;
     const note = document.querySelector('#case-content .-note');
     note.className = 'sample-note';

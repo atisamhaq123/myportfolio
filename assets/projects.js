@@ -1,5 +1,70 @@
 window.portfolioProjects = [
 {
+  "id": "maid-match",
+  "mockup": "Mockups/maid-match-portfolio-mockup-1000x750.png",
+  "title": "Maid-Match",
+  "subtitle": "AI-scored household help matching",
+  "category": "Business platforms",
+  "type": "AI SAAS / FAMILY MATCHING",
+  "client": "Maid-Match (demo project)",
+  "date": "October 2026",
+  "color": "#e0eee6",
+  "cover": "02-matching-desktop.png",
+  "mobileCover": "04-matching-mobile.png",
+  "summary": "A premium family workspace for discovering household help, generating AI-scored shortlists, comparing suitability, and planning interviews together.",
+  "description": "Maid-Match combines household requirements, a consent-based maid directory, saved matches, interview planning, and family collaboration in one responsive SaaS. Its AI assistant evaluates work-related profile facts, generates suitability scores and a relevant shortlist, and explains reasons and gaps while families retain the final decision.",
+  "challenge": "Families need to compare skills, working days, hours, living arrangements, and monthly pay without losing track of their needs. AI recommendations must use actual profile records, keep private family data scoped to the right workspace, and clearly distinguish suitability estimates from verified credentials or hiring decisions.",
+  "solution": "Built a Next.js, React, and TypeScript platform with Supabase email authentication, PostgreSQL row-level security, owner/member permissions, email-bound invitation links, and optimistic version checks. A server-side OpenAI integration receives a bounded set of anonymized work-related facts and returns a structured shortlist with model-generated scores, reasons, gaps, and interview questions. The server rejects unknown profile IDs, invalid scores, changed requirements, and withdrawn profiles. Stripe Starter/Pro integration uses organization billing leases, signed idempotent webhooks, and reconciliation. An emerald-noir interface connects the experience with photographic cards and an animated, reduced-motion-aware assistant loader.",
+  "features": [
+    "AI assistant with model-generated suitability scores, a relevant shortlist, reasons, gaps, and interview questions",
+    "Household requirements covering skills, service area, monthly budget, working days, hours, and living arrangement",
+    "Consent-based profile discovery, search and service filters, saved matches, and profile details with photos",
+    "Private family workspaces with owner/member roles, invitation links, member controls, and shared activity",
+    "Interview planning, family notes, arrangement status, and conflict-aware record updates",
+    "Supabase verified-email authentication and tenant-isolated PostgreSQL policies with database-enforced AI quotas",
+    "Stripe Starter/Pro integration with Checkout, customer portal, billing leases, webhooks, and subscription reconciliation",
+    "Premium responsive dark interface with desktop/mobile layouts and an animated AI loading state"
+  ],
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Supabase",
+    "PostgreSQL",
+    "OpenAI",
+    "Stripe",
+    "Playwright"
+  ],
+  "scope": "Independent portfolio project. Screenshots show a browser-local demo with stock photography and explicitly labeled example AI scores; a separate live OpenAI scoring check passed using anonymized synthetic profiles. The photographed people are not represented as the named profiles or available for hire. Interview scheduling is a private family planning record and does not contact maids. The implementation includes Stripe billing, but these captures do not certify production payments, email delivery, reference checks, or completed hiring arrangements.",
+  "screens": [
+    [
+      "01-home-desktop.png",
+      "Premium Maid-Match landing page",
+      "desktop"
+    ],
+    [
+      "02-matching-desktop.png",
+      "Family matching dashboard and profile discovery",
+      "desktop"
+    ],
+    [
+      "03-ai-shortlist-desktop.png",
+      "AI assistant shortlist with example scores (demo)",
+      "desktop"
+    ],
+    [
+      "04-matching-mobile.png",
+      "Mobile family matching dashboard",
+      "mobile"
+    ],
+    [
+      "05-ai-shortlist-mobile.png",
+      "Mobile AI assistant and scored shortlist (demo)",
+      "mobile"
+    ]
+  ]
+},
+{
   "id": "quotient-procurement",
   "mockup": "Mockups/quotient-procurement-portfolio-mockup-1000x750.png",
   "title": "Quotient Procurement",

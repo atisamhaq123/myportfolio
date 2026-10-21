@@ -15,8 +15,8 @@ const {chromium} = require('../../../Helio Customer Portal/.tools/node_modules/p
   await page.waitForTimeout(1500);
   assert.equal(await page.locator('.hero-line').first().evaluate(el=>getComputedStyle(el).opacity),'1');
   assert.equal(await page.locator('.hero-line').first().evaluate(el=>getComputedStyle(el).animationIterationCount),'1');
-  assert.equal(await page.locator('.engineering-highlight').count(),13);
-  report.checks.push('Entrance animation finishes once; all 13 project engineering details render');
+  assert.equal(await page.locator('.engineering-highlight').count(),14);
+  report.checks.push('Entrance animation finishes once; all 14 project engineering details render');
   console.log('PASS entrance and engineering details');
   for (const width of [1440,1024,768,390,320]) { console.log("CHECK viewport "+width); console.log("CHECK viewport "+width);
    await page.setViewportSize({width,height:width>600?1000:844});
