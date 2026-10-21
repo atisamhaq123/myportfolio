@@ -23,6 +23,7 @@
     </article>`).join('');
 
   const engineeringHighlights = {
+    'quotient-procurement': 'Tenant-safe quote comparison, approvals & bounded AI review',
     'orbit-sales': 'Document-based RAG, hybrid retrieval & cited AI answers',
     clientnest: 'Tenant-scoped access, private files & verified subscription limits',
     'grounded-men': 'Capacity-protected bookings & teacher-scoped attendance',

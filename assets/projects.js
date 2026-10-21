@@ -1,5 +1,49 @@
 window.portfolioProjects = [
 {
+  "id": "quotient-procurement",
+  "mockup": "Mockups/quotient-procurement-portfolio-mockup-1000x750.png",
+  "title": "Quotient Procurement",
+  "subtitle": "AI supplier quote comparison & approvals",
+  "category": "Business platforms",
+  "type": "AI SAAS / PROCUREMENT",
+  "client": "Quotient Procurement (demo project)",
+  "date": "October 2026",
+  "color": "#e5f0e8",
+  "cover": "02-comparison-desktop.png",
+  "mobileCover": "05-comparison-mobile.png",
+  "summary": "A multi-tenant purchasing workspace for comparing supplier quotes, shortlisting vendors, generating bounded AI reviews, and controlling approval decisions.",
+  "description": "Quotient Procurement brings purchase requests, structured supplier quotations, landed-cost comparison, decision support, approvals, and audit history into one responsive workspace. Teams can compare price, tax, shipping, lead time, and payment terms while owners retain control of final approval decisions.",
+  "challenge": "Purchasing teams often compare inconsistent quotations in spreadsheets, making delivery trade-offs, approval history, and tenant access difficult to control. AI assistance also needs strict data and quota boundaries so it supports rather than replaces accountable decisions.",
+  "solution": "Built a Next.js and TypeScript SaaS backed by Supabase authentication, PostgreSQL row-level security, organization-scoped RPCs, and optimistic version checks. Structured quote data drives normalized totals and OpenAI-assisted reviews. An owner-controlled workflow records decisions and audit events, while Stripe Starter and Pro subscriptions enforce member, request, and daily AI limits in the database.",
+  "features": [
+    "Multi-tenant organizations with owner/member roles and email-bound invitations",
+    "Structured supplier quotations with items, tax, shipping, currency, lead time, and terms",
+    "Side-by-side landed-cost comparison, charts, and supplier shortlisting",
+    "Bounded OpenAI review over saved quote data with plan-based daily quotas",
+    "Draft, review, approved, rejected, and archived workflow with audit history",
+    "Stripe Starter and Pro subscriptions with Checkout, portal, webhooks, and reconciliation",
+    "CSV import/export, JSON backup, decision briefs, and responsive desktop/mobile UI"
+  ],
+  "stack": [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Supabase",
+    "PostgreSQL",
+    "OpenAI",
+    "Stripe",
+    "Playwright"
+  ],
+  "scope": "Independent portfolio demo using fictional procurement data. AI reviews analyze structured quote data supplied by the application; this is not RAG and does not autonomously approve purchases. Stripe was exercised in test mode, and the captures do not establish production payment operation, ERP integration, OCR, supplier messaging, or purchase-order fulfillment.",
+  "screens": [
+    ["01-home-desktop.png", "Quotient Procurement homepage", "desktop"],
+    ["02-comparison-desktop.png", "Supplier quote comparison workspace", "desktop"],
+    ["03-settings-desktop.png", "Workspace and subscription settings", "desktop"],
+    ["04-home-mobile.png", "Mobile Quotient homepage", "mobile"],
+    ["05-comparison-mobile.png", "Mobile supplier quote comparison", "mobile"]
+  ]
+},
+  {
   "id": "orbit-sales",
   "title": "Orbit Sales",
   "subtitle": "AI sales CRM with document-based RAG",
